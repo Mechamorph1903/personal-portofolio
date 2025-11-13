@@ -1,0 +1,249 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: black;
+	font-family: fantasy;
+	color: white;
+}
+
+.playwrite-mx-guides-regular {
+  font-family: "Playwrite MX Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.im-fell-english-regular {
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.im-fell-english-regular-italic {
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.overpass-regular {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.stack-sans-notch-regular {
+  font-family: "Stack Sans Notch", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+nav{
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+	position: sticky;
+	top: 0;
+	z-index: 3;
+	background-color: black;
+}
+
+.contact{
+margin: 0 10em;
+}
+
+.tabs{
+	width: 15em;
+	padding: 4px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 10em;
+}
+
+
+.info{
+	color: white;
+}
+
+
+.tabs > a{
+	text-decoration: none;
+	color: orange;
+}
+
+.pfp{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color:black;
+	padding: 20px;
+}
+.intro{
+	color: orange;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#pfp{
+	border-radius: 50%;
+	width: 420px;
+	height: 385px;
+}
+
+.social_media>a{
+	text-decoration: none;
+	color: grey;
+	font-size: 40px;
+	transition: ease 0.3s;
+}
+.social_media>a:hover{
+	text-decoration: none;
+	color: orange;
+	font-size: 40px;
+}
+
+.downloads{
+	margin-top: 10px;
+	padding: 5px;
+}
+.download-button{
+	text-decoration: none;
+	border: 2px solid orange;
+	padding: 7px;
+	border-radius: 8px;
+	color: orange;
+	transition: ease-out 0.3s;
+	margin: 0px 10px;
+}
+
+.download-button:hover{
+	color: white;
+	background-color: orange;
+}
+
+#about{
+	background-color: rgb(29, 26, 26);
+	padding: 15px;
+}
+
+.about-heading {
+	margin: 0 0 0.5rem 0;
+	font-size: 1.6rem;
+	letter-spacing: -0.2px;
+	color: orange;
+}
+
+.about-sub {
+    color: white;
+    margin: 0 0 1rem 0;
+    font-size: 0.95rem;
+}
+.about-p {
+    margin: 0 0 1rem 0;
+}
+
+
+.hobbies {
+      margin-top:0.75rem;
+      font-style:normal;
+}
+.project-links a {
+	color: orange;
+	text-decoration: none;
+}
+.project-links a:hover,
+.project-links a:focus {
+	text-decoration: underline;
+}
+
+#skills{
+	background-color:  rgb(34, 31, 31);
+	padding: 15px;
+}
+
+.language-icons{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: center;
+	padding: 20px;
+	gap: 10em 12em;	
+}
+
+.lang-template{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+	color: orange;
+	width: 200px;
+}
+
+.lang-template > i{
+	color: green;
+	font-size: 60px;
+}
+
+#html div > i {
+	color: green;
+	font-size: 60px;
+}
+
+#html div > span{
+	font-size: 50px;
+	color: orange;
+}
+
+.lang-template > span{
+	font-size: 60px;
+}
+
+.lang-template > strong {
+	font-size: 50px;
+	color: green;
+}
+
+.lang-template > p{
+	font-weight: 700;
+}
+
+#python{
+	grid-column: 2 / -1;
+}
+
+
+
+#work_experience{
+	padding: 15px;
+}
+
+#experiences{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.experience-card{
+	width: 42em;
+	display: flex;
+	border-left: 5px solid orange;
+	border-radius: 4px;
+	padding: 7px;
+	justify-content: space-between;
+	margin-bottom: 30px;
+
+}
+
+.experience-card > p{
+	color: gray;
+}
