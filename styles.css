@@ -132,7 +132,7 @@ margin: 0 10em;
 }
 
 #about{
-	background-color: rgb(29, 26, 26);
+	background-color: rgb(10, 10, 10);
 	padding: 15px;
 }
 
@@ -246,4 +246,65 @@ margin: 0 10em;
 
 .experience-card > p{
 	color: gray;
+}
+
+#projects{
+	padding: 15px;
+}
+
+#proj-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px;
+	gap: 8em;
+
+}
+
+.project-card{
+	display: flex;
+	width: 50em;
+	height: 25em;
+	padding: 20px;
+	background-color: white;
+	color: black;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 15px;
+}
+
+.screenshot > img{
+	width: 550px;
+	height: auto;
+	border-radius: 8px;
+	    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+
+}
+
+.description > a {
+	text-decoration: none;
+	color: black;
+	font-weight: 500;
+	transition: all 0.4s ease-in-out;
+}
+
+.description > a:hover{
+	font-size: large;
+	text-decoration: underline;
+	
+}
+
+.description > h2{
+	border-left: 2px solid black;
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+.description > p{
+	margin-bottom: 20px;
+}
+
+.description{
+	margin-left: 2em;
 }
