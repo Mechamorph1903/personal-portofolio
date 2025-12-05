@@ -61,7 +61,7 @@ margin: 0 10em;
 }
 
 .tabs{
-	width: 15em;
+	width: 20em;
 	padding: 4px;
 	display: flex;
 	justify-content: space-between;
@@ -74,10 +74,29 @@ margin: 0 10em;
 }
 
 
-.tabs > a{
+.links{
 	text-decoration: none;
 	color: orange;
+	transition: all 0.3s ease-in;
 }
+
+.links:hover{
+	color: white;
+}
+
+.links hr {
+  margin: 0.1rem 0;
+  height: 2px;
+  border: none;
+  background: gray;   
+  transition: all 0.3s ease-in;
+}
+
+
+.links:hover hr {
+  background: orange;  
+}
+
 
 .pfp{
 	display: flex;
@@ -131,6 +150,20 @@ margin: 0 10em;
 	background-color: orange;
 }
 
+header{
+	margin: 3em auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+header h1 {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 1rem;;
+}
+
 #about{
 	background-color: rgb(10, 10, 10);
 	padding: 15px;
@@ -167,7 +200,7 @@ margin: 0 10em;
 }
 
 #skills{
-	background-color:  rgb(34, 31, 31);
+	background-color:  rgb(20, 19, 19);
 	padding: 15px;
 }
 
@@ -224,6 +257,7 @@ margin: 0 10em;
 
 #work_experience{
 	padding: 15px;
+	background-color: rgb(24, 21, 21);
 }
 
 #experiences{
@@ -248,8 +282,21 @@ margin: 0 10em;
 	color: gray;
 }
 
+.role-time{
+	width: 18em;
+	/* margin-right: 20px; */
+}
+.company-location{
+	width: 18em;
+	/* margin-right: 20px; */
+}
+.job-type{
+	width: 10em;
+}
+
 #projects{
 	padding: 15px;
+	background-color: rgb(33, 32, 32);
 }
 
 #proj-container{

@@ -6,6 +6,7 @@
 	<title>Daniel Anorue Jr.</title>
 	<link rel="stylesheet" href="styles.css">
 	<script src="script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script src="https://kit.fontawesome.com/80d7c3b825.js" crossorigin="anonymous"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +19,11 @@
 			<p class="info"></p>
 		</div>
 		<div class="tabs">
-			<a href="#about">About Me <hr></a>
-			<a href="#projects">Projects <hr></a>
-			<a href="#work_experience">Experience <hr></a>
+			<a class="links" href="#about">About Me <hr></a>
+			<a class="links" href="#skills">Languages<hr></a>
+			<a class="links" href="#work_experience">Experience<hr></a>
+			<a class="links" href="#projects">Projects <hr></a>
+			
 		</div>
 	</nav>
 	<main class="pfp">
@@ -45,10 +48,12 @@
 		<!-- Think of it as Pasting your Cover Letter Here -->
 		 <header>
 			<h2 id="about-heading" class="about-heading">About Me</h2>
-			<p class="about-sub">Hey! My name is <strong>Daniel Anorue Jr</strong>, a (Junior) Computer Science major at <strong>The University of Southern Mississippi</strong>.</p>
 		</header>
 
 		<article>
+			<p class="about-sub">Hey! My name is <strong>Daniel Anorue Jr</strong>, a (Junior) Computer Science major at <strong>The University of Southern Mississippi</strong>.</p>
+
+
 			<p class="about-p">
 			I aim to specialize in <strong>Software Engineering (Full-Stack)</strong>. I take extracurricular classes in order to bolster my skillset toward becoming a decent Software Developer. 
 			I’ve done courses with <span class="badge">IBM</span>, <span class="badge">FreeCodeCamp</span>, and <span class="badge">CodePath</span> to that effect.
@@ -86,14 +91,18 @@
 	</section>
 	<section id="skills">
 		<div class="Languages">
-			<h1>Languages</h1>
+			<header>
+				<h1>Languages/Frameworks</h1>
+			</header>
+
+
 			<div class="language-icons" >
 				<div class="lang-template" id="python">
 					<i class="fa-brands fa-python"></i>
 					<p>Python</p>
 				</div>
 				<div class="lang-template">
-					<strong class="stack-sans-notch-regular">C++</strong>
+					<strong class="stack-sans-notch-regular"><i class="fa-solid fa-c"></i><i class="fa-solid fa-plus"></i><i class="fa-solid fa-plus"></i></strong>
 					<p>C++</p>
 				</div>
 				<div class="lang-template">
@@ -101,15 +110,32 @@
 					<p>JavaScript</p>
 				</div>
 				<div class="lang-template" id="html">
-					<div><i class="fa-brands fa-html5"></i><span>/</span><i class="fa-brands fa-css3-alt"></i></div>
+					<div><i class="fa-brands fa-html5"></i><span>|</span><i class="fa-brands fa-css3-alt"></i></div>
 					<p>HTML/CSS</p>
+				</div>
+				<div class="lang-template" id="html">
+					<div><i class="fa-brands fa-react"></i></div>
+					<p>React</p>
+				</div>
+				<div class="lang-template" id="html">
+					<div><i class="fa-brands fa-python"></i></div>
+					<p>Flask</p>
+				</div>
+				<div class="lang-template" id="html">
+					<div><i class="fa-brands fa-bootstrap"></i></div>
+					<p>Bootstrap</p>
+				</div>
+				<div class="lang-template" id="html">
+					<div><i class="fa-solid fa-database"></i></div>
+					<p>SQL</p>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section id="work_experience">
+	<header>
 		<h1>Work Experience</h1>
-
+	</header>
 	<div id="experiences">
 		<div class="experience-card">
 			<div class="role-time">
@@ -124,7 +150,40 @@
 				<h2>Part-Time</h2>
 			</div>
 		</div>
+
+	<header>
+		<h1>Involvement</h1>
+	</header>
+
+	<div id="involvements">
 		<div class="experience-card">
+			<div class="role-time">
+				<h2>National Society of Black Engineers</h2>
+				<p>August 2024 - Present</p>
+			</div>
+			<div class="company-location">
+				<h2>The University of Southern Mississipi Chapter</h2>
+				<p>Region III</p>
+			</div>
+			<div class="job-type">
+				<h2>Member</h2>
+			</div>
+		</div>
+		<div class="experience-card">
+			<div class="role-time">
+				<h2>ColorStack</h2>
+				<p>April 2024 - Present</p>
+			</div>
+			<div class="company-location">
+				<h2>ColorStack @ USM Chapter</h2>
+				<p>Region III</p>
+			</div>
+			<div class="job-type">
+				<h2>President/Founder (Chapter)</h2>
+			</div>
+		</div>
+	</div>
+		<!-- <div class="experience-card">
 			<div class="role-time">
 				<h2>Junior Technician</h2>
 				<p>Feb 2023 - July 2023</p>
@@ -136,11 +195,13 @@
 			<div class="job-type">
 				<h2>Part-Time</h2>
 			</div>
-		</div>
+		</div> -->
 	</div>
 	</section>
 	<section id="projects">
-		<h1>Projects</h1>
+		<header>
+			<h1>Projects</h1>
+		</header>
 		<div id="proj-container">
 			<div class="project-card">
 				<div class="screenshot">
@@ -157,15 +218,26 @@
 			</div>
 			<div class="project-card">
 				<div class="screenshot">
-					<img src="internin.png" alt="">
+					<img src="TOL.png" alt="">
 				</div>
 				<div class="description">
-					<h2>InternIn</h2>
+					<h2>ThinkOutLoud</h2>
 					<p>
-						A flask web-app used to help users track applications to job postings, 
-						also allowing users connect with other users and also share opportunities with each other
+						ThinkOutLoud is a React-based mock social media web app that allows users to create, view, edit, interact with, and delete posts.
 					</p>
-					<a href="https://internin.onrender.com">Check It Out<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					<a href="https://github.com/Mechamorph1903/ThinkingOutLOud?tab=readme-ov-file">Check It Out<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+			<div class="project-card">
+				<div class="screenshot">
+					<img src="Akpan.png" alt="">
+				</div>
+				<div class="description">
+					<h2>Akpan</h2>
+					<p>
+						A Python-based discord bot that helped users keep records of their leetcode studying daily (and monthly and yearly records), communicated in Nigerian Slang.		
+					</p>
+					<a href="https://github.com/Mechamorph1903/AkpanTheBot">Check It Out<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
 				</div>
 			</div>
 		</div>
